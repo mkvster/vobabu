@@ -10,6 +10,10 @@ namespace VBB.Model
             ChangeLogs = new HashSet<ChangeLog>();
             CourseReviews = new HashSet<CourseReview>();
             Courses = new HashSet<Course>();
+            //CourseTypes = new HashSet<CourseType>();
+            LessonReviews = new HashSet<LessonReview>();
+            PersonStudies = new HashSet<PersonStudy>();
+            WordScores = new HashSet<WordScore>();
             PermissionGroups = new HashSet<PermissionGroup>();
         }
 
@@ -41,11 +45,11 @@ namespace VBB.Model
 
         //public virtual ICollection<CourseType> CourseTypes { get; set; }
 
-        //public virtual ICollection<LessonReview> LessonReviews { get; set; }
+        public virtual ICollection<LessonReview> LessonReviews { get; set; }
 
-        //public virtual ICollection<PersonStudy> PersonStudies { get; set; }
+        public virtual ICollection<PersonStudy> PersonStudies { get; set; }
 
-        //public virtual ICollection<WordScore> WordScores { get; set; }
+        public virtual ICollection<WordScore> WordScores { get; set; }
 
         public virtual ICollection<PermissionGroup> PermissionGroups { get; set; }
     }

@@ -83,7 +83,20 @@
     <Compile Include="EntityConfigurations\CourseReviewConfiguration.cs" />
     <Compile Include="EntityConfigurations\CourseTypeConfiguration.cs" />
     <Compile Include="EntityConfigurations\LanguageConfiguration.cs" />
+    <Compile Include="EntityConfigurations\LessonConfiguration.cs" />
+    <Compile Include="EntityConfigurations\LessonReviewConfiguration.cs" />
+    <Compile Include="EntityConfigurations\PermissionConfiguration.cs" />
+    <Compile Include="EntityConfigurations\PermissionGroupConfiguration.cs" />
+    <Compile Include="EntityConfigurations\PersonConfiguration.cs" />
+    <Compile Include="EntityConfigurations\TermConfiguration.cs" />
+    <Compile Include="EntityConfigurations\TermLevelConfiguration.cs" />
+    <Compile Include="EntityConfigurations\TermPictureConfiguration.cs" />
+    <Compile Include="EntityConfigurations\TermTagConfiguration.cs" />
+    <Compile Include="EntityConfigurations\TermTopicConfiguration.cs" />
+    <Compile Include="EntityConfigurations\TermTypeConfiguration.cs" />
     <Compile Include="EntityConfigurations\TextLimits.cs" />
+    <Compile Include="EntityConfigurations\WordConfiguration.cs" />
+    <Compile Include="EntityConfigurations\WordSoundConfiguration.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

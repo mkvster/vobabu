@@ -7,6 +7,7 @@ namespace VBB.Model
         public Language()
         {
             Courses = new HashSet<Course>();
+            Words = new HashSet<Word>();
         }
 
         public int Id { get; set; }
@@ -25,5 +26,6 @@ namespace VBB.Model
 
         public virtual ICollection<Course> Courses { get; set; }
 
+        public virtual ICollection<Word> Words { get; set; }
     }
 }

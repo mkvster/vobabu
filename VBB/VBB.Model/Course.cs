@@ -8,6 +8,7 @@ namespace VBB.Model
         public Course()
         {
             CourseReviews = new HashSet<CourseReview>();
+            Lessons = new HashSet<Lesson>();
         }
 
         public int Id { get; set; }
@@ -20,7 +21,7 @@ namespace VBB.Model
 
         //public DateTime DateUpdated { get; set; }
 
-        public bool IsActive { get; set; }
+        public bool? IsActive { get; set; }
 
         public string Name { get; set; }
 
@@ -36,7 +37,7 @@ namespace VBB.Model
 
         public virtual Person Author { get; set; }
 
-        //public virtual ICollection<Lesson> Lessons { get; set; }
+        public virtual ICollection<Lesson> Lessons { get; set; }
 
         public virtual ICollection<CourseReview> CourseReviews { get; set; }
     }
