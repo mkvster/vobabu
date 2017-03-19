@@ -1,0 +1,11 @@
+﻿@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>VBB Admin</h1>
+    <p class="lead">You are logged in VBB Admin as a @User.Identity.GetUserName()</p>
+    <p>@Html.ActionLink("Register new person >>", "Register", "Account", null, new { @class = "btn btn-primary btn-lg" })</p>
+</div>
+.

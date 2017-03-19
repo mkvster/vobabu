@@ -1,0 +1,42 @@
+﻿@model VBB.Model.Permission
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Permission</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PermissionGroup.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PermissionGroup.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FeatureName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FeatureName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessLevel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessLevel)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

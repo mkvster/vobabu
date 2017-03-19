@@ -1,0 +1,58 @@
+﻿@model VBB.Model.TermPicture
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TermPicture</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Term.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Term.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsReadOnly)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsReadOnly)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsBlocked)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsBlocked)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImageUrl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsTransparent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsTransparent)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
